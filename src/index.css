@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  overflow-y: auto;
+  font-family: 'Rubik', sans-serif;
+  @apply text-whiteText;
+}
+div#root {
+  height: 100%;
+}
+
+.current_blance {
+  background: url(../src/assets/images/current_balance.png);
+  @apply w-full h-full bg-no-repeat bg-cover min-h-[529px] rounded-[10px];
+}
+
+@layer components {
+  .btn_primary {
+    display: inline-flex;
+    @apply text-base  font-semibold text-main-bg px-5 py-3;
+
+    background: linear-gradient(126deg, #0198fc 0%, #00e69c 100%);
+  }
+  .btn_secondary {
+    @apply text-base border text-DodgerBlue font-medium border-DodgerBlue px-5 py-2;
+  }
+  .gap-base {
+    @apply gap-2 lg:gap-6;
+  }
+}
+
+@layer utilities {
+  .active-navbar {
+    border-radius: 12px;
+    background: linear-gradient(126deg, #0198fc 0%, #00e69c 100%);
+  }
+  .shadow-base {
+    box-shadow: 4px 5px 28px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+}
+.table tr {
+  border-radius: 20px !important;
+}
+
+tr td:nth-child(n + 6),
+tr th:nth-child(n + 6) {
+  border-radius: 0 0.625rem 0.625rem 0 !important;
+}
+
+tr td:nth-child(1),
+tr th:nth-child(1) {
+  border-radius: 0.625rem 0 0 0.625rem !important;
+}
