@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import MainSidebar from '../sidebar/Sidebar';
 import HeaderMain from '../navbar/Navbar';
 

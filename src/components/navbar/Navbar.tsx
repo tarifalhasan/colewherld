@@ -11,7 +11,7 @@ import ProfileMenu from '../ProfileMenu';
 
 const Navbar = () => {
   const [openLeft, setOpenLeft] = useState(false);
-  const openDrawerLeft = () => setOpenLeft(true);
+  // const openDrawerLeft = () => setOpenLeft(true);
   const closeDrawerLeft = () => setOpenLeft(false);
   return (
     <>
