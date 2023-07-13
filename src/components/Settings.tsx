@@ -4,8 +4,6 @@ import {
   MenuList,
   MenuItem,
   IconButton,
-  Avatar,
-  Typography,
 } from '@material-tailwind/react';
 
 import { MdOutlineContactSupport } from 'react-icons/md';

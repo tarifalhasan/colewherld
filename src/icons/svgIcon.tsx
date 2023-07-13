@@ -89,6 +89,7 @@ export const NavbarIcon3 = () => (
     />
   </svg>
 );
+
 export const WalletIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -107,6 +108,7 @@ export const WalletIcon = () => (
     />
   </svg>
 );
+
 export const InvoiceIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -135,6 +137,7 @@ export const InvoiceIcon = () => (
     />
   </svg>
 );
+
 export const TiktokLogo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

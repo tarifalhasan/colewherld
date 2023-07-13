@@ -1,9 +1,8 @@
-import React, { HTMLAttributes } from 'react';
 // import Logo from '@assets/logo/Logo';
-import { FaGavel, FaBriefcase, FaBuilding, FaLayerGroup } from 'react-icons/fa';
+import { FaBuilding, FaLayerGroup } from 'react-icons/fa';
 import { CiLogout } from 'react-icons/ci';
 
-import { Link, Route, useLocation } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import Logo from '../../assets/Logo/Logo';
 
 import { BiSolidDashboard } from 'react-icons/bi';
