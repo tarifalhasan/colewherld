@@ -1,7 +1,5 @@
-// import Logo from '@assets/logo/Logo';
-import { FaBuilding, FaLayerGroup } from 'react-icons/fa';
-import { CiLogout } from 'react-icons/ci';
-
+import { IoNewspaperOutline, IoSettings } from 'react-icons/io5';
+import { BiSolidMessageRoundedDetail } from 'react-icons/bi';
 import { Link, useLocation } from 'wouter';
 import Logo from '../../assets/Logo/Logo';
 
@@ -44,26 +42,24 @@ const SideBar = () => {
           <Logo />
         </div>
         <div className="flex-1 pt-10">
-          <ul className="pt-2 pb-4 space-y-1 text-gray-500">
+          <ul className="pt-2  space-y-3 pb-4  text-gray-500">
             <NavLink
               to="/"
               icon={<BiSolidDashboard size={20} />}
               text="Analytics"
             />
-            <NavLink to="/payment" icon={<MdPayment />} text="Payment" />
             <NavLink
-              to="/catasto_search"
-              icon={<FaBuilding />}
-              text="Catasto Search"
+              to="/payment"
+              icon={<MdPayment size={20} />}
+              text="Payment"
             />
-            <NavLink to="/massive" icon={<FaLayerGroup />} text="Massive" />
-
-            <li className="rounded-sm text-skin-gray-500">
-              <a className="flex items-center p-2 space-x-3 rounded-md">
-                <CiLogout />
-                <span>Logout</span>
-              </a>
-            </li>
+            <NavLink to="/news" icon={<IoNewspaperOutline />} text="News" />
+            <NavLink
+              to="/inbox"
+              icon={<BiSolidMessageRoundedDetail />}
+              text="Inbox"
+            />
+            <NavLink to="/settings" icon={<IoSettings />} text="Settings" />
           </ul>
         </div>
       </div>
