@@ -32,7 +32,7 @@ div#root {
     @apply text-base border text-DodgerBlue font-medium border-DodgerBlue px-5 py-2;
   }
   .gap-base {
-    @apply gap-2 lg:gap-6;
+    @apply gap-4 lg:gap-6;
   }
 }
 
