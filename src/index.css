@@ -45,6 +45,9 @@ div#root {
     box-shadow: 4px 5px 28px 0px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
   }
+  .shadow-2 {
+    filter: drop-shadow(4px 5px 28px rgba(0, 0, 0, 0.05));
+  }
 }
 .table tr {
   border-radius: 20px !important;

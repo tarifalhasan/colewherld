@@ -7,6 +7,8 @@ import Logo from '../../assets/Logo/Logo';
 
 import { BiSolidDashboard } from 'react-icons/bi';
 import { MdPayment } from 'react-icons/md';
+import { CTA } from '../../assets';
+import { ReactSVG } from 'react-svg';
 interface navLinkProps {
   to: any;
   icon: any;
@@ -36,7 +38,7 @@ function NavLink({ to, icon, text }: navLinkProps) {
 // import qrCode from '@assets/img/new/qrCode.png';
 const SideBar = () => {
   return (
-    <div className=" hidden w-[15.5em]   xl:flex flex-col  p-3   bg-primary h-full">
+    <div className=" hidden w-[15.5em] fixed left-0 top-0 bottom-0   xl:flex flex-col  p-3   bg-primary h-full items-center">
       <div className="space-y-3 w-[15.5em]  mt-4 h-full fixed top-0 left-0  p-3  ">
         <div className="flex items-center justify-center">
           <Logo />
@@ -65,14 +67,8 @@ const SideBar = () => {
           </ul>
         </div>
       </div>
-      <div className=" w-[178px] absolute bottom-[3%]  h-[189px] rounded-2xl bg-skin-green grid place-items-center">
-        <div className=" text-center space-y-2">
-          {/* <img src={qrCode} className=" block mx-auto" alt="qrCOde" /> */}
-          <h2 className=" text-base font-semibold text-skin-primary">GO NPE</h2>
-          <p className=" text-white text-xs font-normal">
-            Do Not Waste More <br /> Time
-          </p>
-        </div>
+      <div className="  absolute bottom-[3%]  h-[189px] rounded-2xl bg-skin-green grid place-items-center">
+        <ReactSVG src={CTA} />
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 export default function ProfileMenu() {
   return (
     <Menu>
-      <MenuHandler className=" gap-2 !h-12  xl:w-[226px] px-2 py-2 flex items-center  !max-w-full  bg-primary  shadow-base">
+      <MenuHandler className=" gap-2 !h-12 w-auto  xl:w-[226px] px-2 py-2 flex items-center  !max-w-full  bg-primary  shadow-base">
         <div className="  flex items-center">
           <img
             className=" cursor-pointer w-8 h-8 rounded-full"
@@ -26,7 +26,10 @@ export default function ProfileMenu() {
           <span className="s  hidden xl:block font-sm font-medium  text-whiteText">
             Asmirandah S
           </span>
-          <IoIosArrowDown size={19} className=" text-whiteText" />
+          <IoIosArrowDown
+            size={24}
+            className=" text-whiteText md:block hidden"
+          />
         </div>
       </MenuHandler>
       <MenuList className="bg-primary border-none">

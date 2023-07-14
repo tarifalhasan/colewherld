@@ -4,16 +4,14 @@ import HeaderMain from '../navbar/Navbar';
 
 export default function Layout(props: HTMLAttributes<HTMLDivElement>) {
   return (
-    <main className={'flex w-full overflow-hidden   h-full'}>
-      <div className="  ">
+    <main className={'flex h-full w-full  gap-base  '}>
+      <div className=" hidden xl:block  w-[15.5em]  h-full  ">
         <MainSidebar />
       </div>
-      <div className=" w-full px-2 sm:px-5 xl:px-12 space-y-5 overflow-y-auto">
+      <div className=" w-full h-full px-2 sm:px-5 xl:px-12 space-y-5 ">
         <HeaderMain />
         <div
-          className={
-            '   overflow-y-auto   h-full  mx-auto   m-0  bg-skin-secondary sm:rounded-xl '
-          }
+          className={'h-full  mx-auto    m-0  bg-skin-secondary sm:rounded-xl '}
         >
           {props.children}
         </div>
