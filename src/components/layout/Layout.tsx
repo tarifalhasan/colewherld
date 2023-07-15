@@ -8,7 +8,7 @@ export default function Layout(props: HTMLAttributes<HTMLDivElement>) {
       <div className=" hidden xl:block  w-[15.5em]  h-full  ">
         <MainSidebar />
       </div>
-      <div className=" w-full h-full px-2 sm:px-5 xl:px-12 space-y-5 ">
+      <div className=" w-full h-full px-2.5 sm:px-5 xl:px-12 space-y-5 ">
         <HeaderMain />
         <div
           className={'h-full  mx-auto    m-0  bg-skin-secondary sm:rounded-xl '}

@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 export const options = {
-  responsive: true,
+  // responsive: true,
   interaction: {
     mode: 'index' as const,
     intersect: false,
@@ -61,7 +61,7 @@ export const data = {
   datasets: [
     {
       label: 'Sales',
-      data: [120, 135, 144, 103, 93, 129, 143],
+      data: [120, 135, 144, 1013, 913, 1129, 1143],
       borderColor: 'rgba(0, 230, 156, 1)',
       backgroundColor: 'rgba(0, 230, 156, 1)',
       yAxisID: 'y',

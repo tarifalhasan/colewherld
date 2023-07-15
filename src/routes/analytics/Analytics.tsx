@@ -29,6 +29,9 @@ const Analytics = () => {
               followers={data.totalFlowerCount}
             />
           ))}
+          <div className="  sm:block lg:hidden">
+            <EducationAnalytics />
+          </div>
         </div>
         <div className="grid  gap-base lg:grid-cols-3">
           <div className=" lg:col-span-2">
@@ -36,7 +39,7 @@ const Analytics = () => {
               <MultiAxesChart2 />
             </div>
           </div>
-          <div className=" lg:col-span-1">
+          <div className=" lg:col-span-1  hidden lg:block">
             <EducationAnalytics />
           </div>
         </div>

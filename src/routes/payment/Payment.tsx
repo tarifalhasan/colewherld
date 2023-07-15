@@ -20,7 +20,7 @@ const Payment = () => {
           <div className=" bg-primary shadow-base grid place-items-center">
             <div className=" p-14 w-full space-y-4 flex  flex-col items-center">
               <h3 className=" text-lg font-semibold">Invoice# 12612</h3>
-              <button className="btn_primary  rounded-xl w-full">
+              <button className="btn_primary inline-flex justify-center  rounded-xl w-full">
                 Pay Now
               </button>
             </div>
@@ -28,7 +28,7 @@ const Payment = () => {
           <div className=" bg-primary shadow-base grid place-items-center">
             <div className=" p-14 w-full space-y-4 flex  flex-col items-center">
               <h3 className=" text-lg font-semibold">Customer Service</h3>
-              <button className="btn_primary  rounded-xl w-full">
+              <button className="btn_primary inline-flex justify-center  rounded-xl w-full">
                 Chat Now
               </button>
             </div>

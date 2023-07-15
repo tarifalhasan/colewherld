@@ -1,6 +1,13 @@
 import { invoincesData } from '../constant';
 import { InvoiceIcon } from '../icons/svgIcon';
-
+import {
+  Menu,
+  IconButton,
+  MenuList,
+  MenuItem,
+  MenuHandler,
+} from '@material-tailwind/react';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 const Invoices = () => {
   <style
   // dangerouslySetInnerHTML={{
@@ -10,7 +17,7 @@ const Invoices = () => {
   />;
 
   return (
-    <div className="overflow-x-auto ">
+    <div className="overflow-x-auto py-5 ">
       <h2 className=" py-8 text-[1.375em] font-semibold">Invoices</h2>
       <div className="table w-full  text-whiteText  space-y-6 text-sm">
         <ul className="  space-y-5">
@@ -19,7 +26,7 @@ const Invoices = () => {
               key={index}
               className=" px-1 sm:px-5  bg-primary shadow-large rounded-[10px] flex justify-between items-center "
             >
-              <div className="p-3 max-w-[55%] font-medium capitalize">
+              <div className="p-3 font-medium capitalize">
                 <div className="  flex items-center gap-3 py-2 font-normal  ">
                   <div className="relative h-10 w-10">
                     <div className="  w-10 bg-[#36333D] h-10 grid place-items-center shadow-base">
@@ -27,19 +34,30 @@ const Invoices = () => {
                     </div>
                   </div>
 
-                  <h3 className="   font-medium text-xs sm:text-lg">
+                  <h3 className="   font-medium text-base sm:text-lg">
                     {data.title}
                   </h3>
                 </div>
               </div>
 
-              <div className=" space-x-2 sm:space-x-4">
+              <div className=" space-x-2 hidden sm:block sm:space-x-4">
                 <button className=" text-[10px]  sm:text-base py-1 sm:py-2 rounded-full  btn_primary">
                   View
                 </button>
-                <button className=" text-[10px]  rounded-full sm:text-base   border text-DodgerBlue font-medium border-DodgerBlue px-3 sm:px-5 py-2">
-                  Download
-                </button>
+                <button className="btn_secondary rounded-full">Download</button>
+              </div>
+              <div className=" sm:hidden">
+                <Menu placement="bottom-end">
+                  <MenuHandler>
+                    <button>
+                      <BsThreeDotsVertical size={20} />
+                    </button>
+                  </MenuHandler>
+                  <MenuList className=" bg-primary border-none shadow-xl">
+                    <MenuItem className=" text-whiteText">View</MenuItem>
+                    <MenuItem className="text-whiteText">Dowbload</MenuItem>
+                  </MenuList>
+                </Menu>
               </div>
             </li>
           ))}

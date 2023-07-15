@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Drawer, Typography, IconButton } from '@material-tailwind/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { RxCross2 } from 'react-icons/rx';
 import { IoNewspaperOutline, IoSettings } from 'react-icons/io5';
 import { BiSolidMessageRoundedDetail } from 'react-icons/bi';
 
@@ -52,7 +52,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
       placement="left"
       open={openLeft}
       onClose={closeDrawerLeft}
-      className="p-4 bg-primary w-[15.5em] !max-w-[15.5em]"
+      className="p-4 bg-primary max-w-[15.5em] "
     >
       <div className=" bg-primary">
         <div className="mb-6 flex items-center justify-between">
@@ -62,7 +62,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
             color="blue-gray"
             onClick={closeDrawerLeft}
           >
-            <XMarkIcon strokeWidth={2} className="h-5 w-5" />
+            <RxCross2 size={20} />
           </IconButton>
         </div>
         <div className="   flex flex-col  p-3   bg-primary h-full">

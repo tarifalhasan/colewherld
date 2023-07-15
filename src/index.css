@@ -24,7 +24,7 @@ div#root {
 @layer components {
   .btn_primary {
     display: inline-flex;
-    @apply text-base  font-semibold text-main-bg px-5 py-3;
+    @apply text-base   font-semibold text-main-bg px-5 py-3;
 
     background: linear-gradient(126deg, #0198fc 0%, #00e69c 100%);
   }
@@ -32,7 +32,7 @@ div#root {
     @apply text-base border text-DodgerBlue font-medium border-DodgerBlue px-5 py-2;
   }
   .gap-base {
-    @apply gap-4 lg:gap-6;
+    @apply gap-8 lg:gap-6;
   }
 }
 
