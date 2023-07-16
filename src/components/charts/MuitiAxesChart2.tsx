@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 export const options = {
-  // responsive: true,
+  responsive: true,
 
   interaction: {
     mode: 'index' as const,
